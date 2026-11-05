@@ -187,7 +187,10 @@ class ScheduleWidgetState extends ConsumerState<ScheduleWidget> {
           child: Row(
             spacing: 16,
             children: <Widget>[
-              const Icon(Icons.info_rounded),
+              Icon(
+                Icons.info_rounded,
+                color: context.palette.contrastSecondary,
+              ),
               Text(
                 "Расписание: $scheduleInfo\nЗамены: $substitutionsInfo",
                 style: context.styles.openSansRegular14_18.copyWith(
