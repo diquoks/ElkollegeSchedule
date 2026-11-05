@@ -299,7 +299,7 @@ class ScheduleWidgetState extends ConsumerState<ScheduleWidget> {
       context: context,
       initialDate: _selectedDate.value,
       firstDate: const .fromEnvironment("DEBUG_DATE_PICKER")
-          ? currentDate.copyWith(year: currentDate.year - 2)
+          ? .new(2026)
           : currentDate.subtract(const .new(days: 7)),
       lastDate: currentDate.add(const .new(days: 6)),
       currentDate: currentDate,
